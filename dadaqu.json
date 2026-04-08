@@ -1,0 +1,46 @@
+{
+  "name": "达达趣影视",
+  "type": "csp",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "url": "https://www.dadaqu.cc/",
+  "headers": {
+    "referer": "https://www.dadaqu.cc/",
+    "sec-ch-ua": "\"Chromium\";v=\"129\", \"Not=A?Brand\";v=\"8\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\""
+  },
+  "list": {
+    "filter": "div[class*='list'] a[class*='btn']",
+    "title": "text()",
+    "href": "attr(href)",
+    "cover": "//img[contains(@src,'pic')]/@src",
+    "update": "preceding-sibling::*[1]/text()"
+  },
+  "play": {
+    "filter": "iframe[src*='play']",
+    "src": "attr(src)",
+    "referer": "https://www.dadaqu.cc/"
+  },
+  "categories": [
+    {
+      "name": "电影",
+      "url": "https://www.dadaqu.cc/type/1.html"
+    },
+    {
+      "name": "剧集",
+      "url": "https://www.dadaqu.cc/type/2.html"
+    },
+    {
+      "name": "综艺",
+      "url": "https://www.dadaqu.cc/type/3.html"
+    },
+    {
+      "name": "动漫",
+      "url": "https://www.dadaqu.cc/type/4.html"
+    }
+  ],
+  "page": {
+    "next": "a[href*='page=']:last()/@href",
+    "rule": "page=\\d+"
+  }
+}
