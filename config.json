@@ -1,7 +1,6 @@
 {
   "name": "达达趣",
   "description": "达达兔影视站，海量高清影视资源，支持电影、剧集、综艺、动漫",
-  "notification": "",
   "host": "https://www.dadaqu.cc/",
   "files": ["main.js"],
   "pages": [
@@ -9,48 +8,40 @@
       "key": "index",
       "title": "首页",
       "url": "https://www.dadaqu.cc/",
-      "timeout": 20,
       "javascript": "buildMedias"
     },
     {
       "key": "movie",
       "title": "电影",
       "url": "https://www.dadaqu.cc/type/1/${pageNumber}.html",
-      "timeout": 20,
       "javascript": "buildMedias"
     },
     {
       "key": "shows",
       "title": "连续剧",
       "url": "https://www.dadaqu.cc/type/2/${pageNumber}.html",
-      "timeout": 20,
       "javascript": "buildMedias"
     },
     {
       "key": "variety",
       "title": "综艺",
       "url": "https://www.dadaqu.cc/type/3/${pageNumber}.html",
-      "timeout": 20,
       "javascript": "buildMedias"
     },
     {
       "key": "anime",
       "title": "动漫",
       "url": "https://www.dadaqu.cc/type/4/${pageNumber}.html",
-      "timeout": 20,
       "javascript": "buildMedias"
     }
   ],
   "episodes": {
-    "timeout": 20,
     "javascript": "getEpisodes"
   },
   "player": {
-    "timeout": 20,
     "javascript": "Player"
   },
   "search": {
-    "timeout": 20,
     "url": "https://www.dadaqu.cc/search/${keyword}-------------.html",
     "javascript": "Search"
   }
