@@ -1,4 +1,4 @@
-# dadaq
+# da
 
  SyncNext 插件仓库。
 
