@@ -1,6 +1,6 @@
 # dadaq
 
-达达趣 SyncNext 插件仓库。
+ SyncNext 插件仓库。
 
 | 类型 | 链接 |
 | --- | --- |
