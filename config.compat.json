@@ -1,0 +1,50 @@
+{
+  "name": "dadaq",
+  "description": "dadaqu syncnext plugin compatibility config",
+  "host": "https://www.dadaqu.cc/",
+  "files": [
+    "https://cdn.jsdelivr.net/gh/YSL115/dadaq@main/main.js"
+  ],
+  "pages": [
+    {
+      "key": "index",
+      "title": "Home",
+      "url": "https://www.dadaqu.cc/",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "movie",
+      "title": "Movie",
+      "url": "https://www.dadaqu.cc/type/1/${pageNumber}.html",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "shows",
+      "title": "TV",
+      "url": "https://www.dadaqu.cc/type/2/${pageNumber}.html",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "variety",
+      "title": "Variety",
+      "url": "https://www.dadaqu.cc/type/3/${pageNumber}.html",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "anime",
+      "title": "Anime",
+      "url": "https://www.dadaqu.cc/type/4/${pageNumber}.html",
+      "javascript": "buildMedias"
+    }
+  ],
+  "episodes": {
+    "javascript": "getEpisodes"
+  },
+  "player": {
+    "javascript": "Player"
+  },
+  "search": {
+    "url": "https://www.dadaqu.cc/search/${keyword}-------------.html",
+    "javascript": "Search"
+  }
+}
